@@ -1,0 +1,66 @@
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 移动端取消 touch 高亮效果
+  background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden; // 旋转元素,背面不可见 
+}
+
+// android 元素被点击时去掉边框
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+// 移动端清除输入框内阴影
+input,
+textarea {
+  border: 0;
+  -webkit-appearance: none;
+}
+
+// 公共样式
+.main-big-box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  .main-content-box {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.embed-full {
+  padding: 0 12px;
+}
+
+.submit-btn {
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #4F96FC;
+  flex-shrink: 0;
+}
+
+// 单行文本溢出省略
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

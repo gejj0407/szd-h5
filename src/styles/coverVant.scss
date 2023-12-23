@@ -1,0 +1,44 @@
+body {
+  // van-search
+  --van-search-content-background: #fff;
+  --van-search-background: #f5f5f5;
+  --van-search-padding: 12px 0;
+  --van-tabs-nav-background: transparent;
+  --van-tabs-line-height: 24px;
+  --van-cell-font-size: 16px;
+  --van-text-color: #343434;
+  --van-field-input-text-color: #343434;
+  --van-cell-line-height: 22px;
+  --van-cell-border-color: #cecece;
+  //van-radio-disabled
+  --van-radio-disabled-icon-color: var(--van-primary-color);
+  --van-radio-disabled-label-color: inhert;
+  --van-radio-disabled-background: transparent;
+  // van-navbar
+  --van-nav-bar-icon-color: #999;
+}
+
+.van-search__content {
+  box-shadow: 0 0 4px 0 rgba(0, 148, 255, 0.1);
+  border: 1px solid rgba(54, 150, 245, 0.45);
+}
+
+// vant 表单-非必填样式和必填样式对齐
+.form-align-control .van-field__label:not(.van-field__label--required)::before {
+  margin-right: 0.125rem;
+  color: transparent;
+  content: "*";
+}
+.van-tabs__wrap {
+  margin-bottom: 10px;
+  .van-tabs__nav--line {
+    box-sizing: border-box !important;
+    padding-bottom: 9px !important;
+  }
+  .van-tabs__line {
+    top: 20px;
+  }
+}
+.van-field__label {
+  font-weight: 600;
+}
